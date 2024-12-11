@@ -22,28 +22,44 @@ export default function AppBar() {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/cart"
             className={`hover:text-gray-300 ${
               pathname === '/about' ? 'font-bold underline' : ''
             }`}
           >
-            About
+            cart
           </Link>
           <Link
-            href="/products"
+            href="/catalog"
             className={`hover:text-gray-300 ${
               pathname === '/products' ? 'font-bold underline' : ''
             }`}
           >
-            Products
+            catalog
           </Link>
           <Link
-            href="/contact"
+            href="/discover"
             className={`hover:text-gray-300 ${
               pathname === '/contact' ? 'font-bold underline' : ''
             }`}
           >
-            Contact
+            discover
+          </Link>
+          <Link
+            href="/fabrics"
+            className={`hover:text-gray-300 ${
+              pathname === '/contact' ? 'font-bold underline' : ''
+            }`}
+          >
+            fabrics
+          </Link>
+          <Link
+            href="/product"
+            className={`hover:text-gray-300 ${
+              pathname === '/contact' ? 'font-bold underline' : ''
+            }`}
+          >
+            product
           </Link>
         </div>
       </div>

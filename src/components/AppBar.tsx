@@ -22,6 +22,14 @@ export default function AppBar() {
             Home
           </Link>
           <Link
+            href="/capsules"
+            className={`hover:text-gray-300 ${
+              pathname === '/about' ? 'font-bold underline' : ''
+            }`}
+          >
+            capsules
+          </Link>
+          <Link
             href="/cart"
             className={`hover:text-gray-300 ${
               pathname === '/about' ? 'font-bold underline' : ''

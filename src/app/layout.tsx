@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google';
 import "./globals.css";
 import AppBar from "../components/AppBar";
 
@@ -12,6 +13,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+const inter = Inter({ subsets: ['latin'] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className={`min-h-screen ${geistSans.className}`}>
-        <AppBar />
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${inter.className}`}>
+<body className={`min-h-screen  ${inter.className}`}>        <AppBar />
         <main>
           {children}
         </main>

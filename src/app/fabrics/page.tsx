@@ -1,4 +1,4 @@
 
 export default function fabrics() {
-  return <div>fabrics</div>;
+  return <div>TELASMOR</div>;
 }
